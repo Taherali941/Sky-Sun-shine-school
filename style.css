@@ -151,3 +151,49 @@ nav>ul>li>a {
     align-items: center;
     justify-content: center;
 }
+
+/* this section is for thoughtful words */
+
+.thought{
+    height: 12vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    padding: 10px 0 10px 0;
+
+    >h2{
+        color: white;
+        font-size: xxx-large;
+        font-weight: bolder;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+     /* <!-- stats section for stats of  total students, total qulified teachers, totall passes batches  --> */
+
+.stats{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #5f83b8;
+    padding: 30px;
+}
+
+.stat1,.stat2,.stat3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+    >h4{
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+    >p{
+        text-transform: capitalize;
+        font-size: large;
+        font-weight: 500;
+    }
+}
