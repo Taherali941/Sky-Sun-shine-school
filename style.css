@@ -20,11 +20,11 @@ html,
 body {
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 
 .main {
     width: 100%;
-    scroll-behavior: smooth;
     position: relative;
 }
 
@@ -130,7 +130,7 @@ nav>ul>li>a {
         letter-spacing: 2px;
         color: rgb(36, 33, 33);
     }
-
+    
     >button {
         width: 120px;
         padding: 10px;
@@ -170,15 +170,61 @@ nav>ul>li>a {
         text-transform: uppercase;
     }
 }
+/* <!-- this is the goal of the school section --> */
 
-     /* <!-- stats section for stats of  total students, total qulified teachers, totall passes batches  --> */
+.g-container{
+    width:100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    }  
+    .left-goal-img{
+        padding: 20px;
+        width: 50%;
+    }
+    .right-goal{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        padding-right: 150px;
+        padding-left: 20px;
+        
+        >h1{
+            font-size: xx-large;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            text-transform: uppercase;  
+        }
+        >h6 {
+            margin-top: 15px;
+            font-size: medium;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: black;
+            
+        }
+        >p{
+            margin-top: 15px;
+            font-size: ;
+            text-transform: capitalize;
+            letter-spacing: 2px;
+            
+        }
+ }
+
+    /* <!-- stats section for stats of  total students, total qulified teachers, totall passes batches  --> */
 
 .stats{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #5f83b8;
-    padding: 30px;
+    padding: 20px;
 }
 
 .stat1,.stat2,.stat3{
@@ -196,4 +242,40 @@ nav>ul>li>a {
         font-size: large;
         font-weight: 500;
     }
+}
+
+        /* <!-- rankers list of school --> */
+
+.rankers-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+}
+.heading-cont{
+    color: antiquewhite;
+
+    >h1{
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+    }
+    >h5{
+        margin-top: 10px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+
+.list-pics{
+    margin-top: 8vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 160px);
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+
 }
