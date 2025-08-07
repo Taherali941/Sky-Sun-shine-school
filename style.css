@@ -27,7 +27,15 @@ body {
     width: 100%;
     position: relative;
 }
-
+*::placeholder{
+    padding: 10px;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: larger;
+    color: #f4f4f4d7;
+    opacity: 50%;
+}
 
 /* this is the nav section and logo styling */
 
@@ -177,7 +185,7 @@ nav>ul>li>a {
     align-items: center;
     flex-direction: row;
     overflow: hidden;
-    padding: 20px;
+    padding: 30px;
     }  
     .left-goal-img{
         width: 50%;
@@ -197,7 +205,7 @@ nav>ul>li>a {
             text-transform: uppercase;  
         }
         >h6 {
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: medium;
             font-weight: 700;
             text-transform: uppercase;
@@ -248,7 +256,7 @@ nav>ul>li>a {
     align-items: center;
     flex-direction: column;
     background-color: black;
-    padding: 20px;
+    padding: 30px;
 }
 .heading-cont{
     color: antiquewhite;
@@ -323,6 +331,10 @@ nav>ul>li>a {
     justify-content: center;
     align-items: center;
     padding: 30px;
+>h1{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 }
 .pic-cont{
     margin-top: 8vh;
@@ -385,3 +397,70 @@ nav>ul>li>a {
  }
 
  }
+
+         /* <!-- this is the contact us form section --> */
+
+
+#contact-us{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.left-contact{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-contact{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#forrm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+>input[type="text"],
+input[type="email"],
+input[type="tel"]{
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    color: #1b1b1b;
+    font-size:small;
+    letter-spacing: 2px;
+    background-color: #7474e2;
+    cursor: pointer;
+    padding: 12px 16px;
+    margin-top: 6vh;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    transition: box-shadow 0.3s ease,background-color 0.3s ease;
+}
+
+>button{
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: large;
+    font-family: var(--secondary-text-font);
+    letter-spacing: 2px;
+    padding: 12px 24px;
+    margin-top: 6vh;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: background-color 0.3s ease,transform 0.3s ease, box-shadow 0.3s ease;
+}
+}
