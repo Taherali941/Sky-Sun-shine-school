@@ -40,7 +40,7 @@
                                 <a href="#gallery">gallery</a>
                             </li>
                             <li>
-                                <a href="contactus">contact-us</a>
+                                <a href="#contact-us">contact-us</a>
                             </li>
                              <li>
                                 <button>
@@ -202,8 +202,7 @@
 
          <!-- this is the contact us form section -->
 
-        <div class="contact-us">
-            <h1>contact-us</h1>
+        <div id="contact-us">
             <div class="left-contact">
                 <h2>lets connect</h2>
                 <div class="links">
@@ -213,15 +212,12 @@
                 </div>
             </div>
             <div class="right-contact">
-                <form action="skys/thank-page.html" method="post">
+                <form action="skys/thank-page.html" method="post" id="forrm">
                             
-                    <label for="name">enter your name</label>
                     <input type="text" name="name" id="name" placeholder="name" required>
                             
-                    <label for="number">enter your number</label>
                     <input type="tel" name="number" id="number" maxlength="10" placeholder="number" required>
                             
-                    <label for="email">enter your email id</label>
                     <input type="email" name="email" id="email" placeholder="email">
                             
                     <button type="submit">submit</button>
