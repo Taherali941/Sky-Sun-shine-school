@@ -9,3 +9,10 @@ navSelect.addEventListener('change',function(){
         window.location.href = this.value;
     }
 });
+
+const ham = document.getElementById('ham');
+const hamli  = document.getElementById('ham-li');
+
+ham.addEventListener('click',function(){
+    hamli.classList.toggle("show");
+})
