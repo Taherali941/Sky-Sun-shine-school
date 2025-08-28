@@ -23,6 +23,7 @@ body {
 .main {
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 *::placeholder{
     padding: 10px;
@@ -105,6 +106,7 @@ body {
 #ham-li.show{
     display: block;
 }
+
 nav>ul>li>a {
     position: relative;
     color: black;
@@ -167,14 +169,13 @@ nav>ul>li>a:hover{
     width: 100%;
     height: 100vh;
     position: relative;
-    margin-top: 10vh;
     overflow: hidden;
     display: flex;
     flex-direction: row;
     background-color: #d0e7f5;
 }
 
-.left-cta {
+.left-cta { 
     width: 60%;
     display: flex;
     justify-content: center;
@@ -184,7 +185,7 @@ nav>ul>li>a:hover{
 
 .left-cta {
     >h1 {
-        font-size: xx-large;
+        font-size: xxx-large;
         font-weight: bold;
         text-transform: uppercase;
         letter-spacing: 2px;
@@ -199,8 +200,6 @@ nav>ul>li>a:hover{
         text-transform: uppercase;
         letter-spacing: 1.5px;
         font-family: 'Roboto', Courier, monospace;
-
-
     >p {
         margin-top: 0.8vh;
         font-size: medium;
@@ -214,12 +213,13 @@ nav>ul>li>a:hover{
     text-transform: capitalize;
     letter-spacing: 2px;
     font-family: 'Inter', Courier, monospace;
+    font: 500;
 }
     >button {
-        width: 120px;
-        padding: 10px;
+        width: 160px;
+        padding: 15px;
         margin-top: 3vh;
-        border-radius: 5px;
+        border-radius: 10px;
         outline: none;
         border: none;
         background-color: blueviolet;
@@ -227,6 +227,8 @@ nav>ul>li>a:hover{
         text-transform: capitalize;
         letter-spacing: 1px;
         font-family: 'Roboto', Courier, monospace;
+        font-size: medium;
+        letter-spacing: 2px;
         box-shadow: 8px 4px 6px rgba(0,0,0,0.4);
     }
     >button:hover{
@@ -239,6 +241,10 @@ nav>ul>li>a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+>img{
+    height: 70vh;
+    filter: drop-shadow( 8px 4px 6px rgba(0,0,0,0.4));
+}
 }
 
 /* this section is for thoughtful words */
@@ -249,8 +255,7 @@ nav>ul>li>a:hover{
     justify-content: space-evenly;
     align-items: center;
     background-color: black;
-    padding: 10px 0 10px 0;
-
+    padding: 60px;
     >h2{
         color: white;
         font-size: xxx-large;
@@ -270,10 +275,15 @@ nav>ul>li>a:hover{
     flex-direction: row;
     overflow: hidden;
     padding: 30px;
-    background-color: #9cd9ee;
     }  
     .left-goal-img{
         width: 50%;
+    >img{
+        width: 40vw;
+        height: 50vh;
+        box-shadow: 8px 4px 6px rgba(0,0,0,0.4);
+        border-radius: 15px;
+    }
     }
     .right-goal{
         width:50%;
@@ -347,7 +357,6 @@ nav>ul>li>a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #2d9ecfc7;
     padding: 30px;
 }
 .heading-cont{
@@ -388,7 +397,6 @@ nav>ul>li>a:hover{
     align-items: center;
     width: 100%;
     padding: 30px;
-    background-color: #b9d5ff;
 >h1{
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -430,7 +438,6 @@ nav>ul>li>a:hover{
     justify-content: center;
     align-items: center;
     padding: 30px;
-    background-color: #7ba3df;
 >h1{
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -460,7 +467,6 @@ nav>ul>li>a:hover{
     align-items: center;
     width: 100%;
     padding: 30px;
-    background-color: #a4c7dc;
 >h1{
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -515,7 +521,7 @@ nav>ul>li>a:hover{
     display: flex;
     flex-direction: row;
     padding: 30px;
-    background-color: #00aeff;
+    background-color: #d6dfe4;
 }
 .left-contact{
     width: 50%;
@@ -714,27 +720,40 @@ contact number and with encoded map address of the school --> */
         display: none;
     }
     .nav-bar{
+        width: 100vw;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 30px;
+        height: 12vh;
     }
     #ham-nav{
         display: block;
     }
     .left-cta{
         width: 100%;
+        margin-top: 15vh;
     }
-    .right-illus{
-        width: 100%;
+    
+.left-cta {
+    >h1 {
+        font-size: xx-large;
+        font-weight: bold;
     }
-
+}
+.right-illus{
+    width: 100%;
+>img{
+    height: 50vh;
+}
+}
     .thought{
-    height: 10vh;
+        height: 10vh;
+        padding: 50px;
 
     >h2{
-        font-size: x-large;
-        font-weight: bolder;
+        font-size: xx-large;
+        font-weight: bolde;
         letter-spacing: 2px;
         text-transform: uppercase;
     }
@@ -748,6 +767,9 @@ contact number and with encoded map address of the school --> */
     }
     .left-goal-img{
         width: 100%;
+    >img{
+        width: 100%;
+    }
     }
     .right-goal{
         width: 100%;
@@ -790,20 +812,20 @@ contact number and with encoded map address of the school --> */
         width: 100%;
         padding: 30px;
      }
-        #contact-us {
+     #contact-us {
                      width: 100%;
                      display: flex;
                      flex-direction: column;
                      align-items: center;
-        }
+    }
 
     .left-contact {
                      width: 100%;
     }
         
     .right-contact {
-                     width: 100%;
-                     padding: 30px;
+        width: 100%;
+        padding: 30px;
     }
     .foot-cont{
     display: flex;
